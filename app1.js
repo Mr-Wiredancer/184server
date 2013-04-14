@@ -6,4 +6,7 @@ var server = net.createServer(function (socket) {
   });
 });
 
-server.listen(1337, '127.0.0.1');
+
+var port = process.env.PORT || 5000;
+console.log(port);
+server.listen(port);
